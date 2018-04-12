@@ -66,7 +66,7 @@ class Search extends React.Component {
             <div 
               key={result.id}
               className="Search-result"
-              onClick={this.handleRedirect(result.id)}
+              onClick={() => this.handleRedirect(result.id)}
             >
               {result.name} ({result.symbol})
             </div>
